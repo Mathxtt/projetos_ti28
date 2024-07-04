@@ -12,9 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // RETORNO DO BANCO
     $retorno = mysqli_query($link, $sql);
 
-    while ($tbl = mysqli_fetch_array($retorno)) {
-        $contagem = $tbl[0];
-    }
+    // while ($tbl = mysqli_fetch_array($retorno)) {
+    //     $contagem = $tbl[0];
+    // }
+
+    $contagem = mysqli_fetch_array($retorno) [0];
 
     // VERIFICA SE NATAN EXISTE
     if ($contagem == 1) {
@@ -47,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label>SENHA</label>
             <input type="password" name="txtsenha" required>
             <br>
-
+            <br>
             <input type="submit" value="ACESSAR">
         </form>
 
