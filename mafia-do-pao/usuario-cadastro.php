@@ -1,6 +1,6 @@
 <?php
 
-include ("conectadb.php");
+include("conectadb.php");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $login = $_POST['txtlogin'];
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         mysqli_query($link, $sql);
         echo "<script>window.alert('USUARIO CADASTRADO COM SUCESSO');</script>";
         echo "<script>window.location.href='login.php';</script>";
-    } else if($contagem >= 1) {
+    } else if ($contagem >= 1) {
         echo "<script>window.alert('USUARIO JÁ EXISTENTE');</script>";
     }
 }
@@ -38,9 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-
+    <a href="backoffice.php"><img src="icons/Navigation-left-01-256.png" width="25" height="25"></a>
     <div class="container-global">
-        <a href="home.php" style="width: 50px; height: 50px; background-color: aliceblue;">VOLTAR</a>
+        <a href="backoffice.php" style="width: 50px; height: 50px; background-color: aliceblue;">VOLTAR</a>
 
         <form class="formulario" action="usuario-cadastro.php" method="post">
 
