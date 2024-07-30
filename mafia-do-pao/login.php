@@ -8,22 +8,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha = $_POST['txtsenha'];
 
     // COMEÇA VALIDAR BANCO DE DADOS
-    $sql = "SELECT usu_id, usu_login FROM tb_usuario WHERE usu_login = '$login' AND usu_senha = '$senha' AND usu_status = '1'";
-
+    $sql = "SELECT COUNT(usu_id) FROM tb_usuarios
+    WHERE usu_login = '$login' AND usu_senha = '$senha' AND
+    usu_status = '1'";
     // RETORNO DO BANCO
     $retorno = mysqli_query($link, $sql);
 
     $contagem = mysqli_fetch_array($retorno)[0];
 
-    // while ($tbl = mysqli_fetch_array($retorno)) {
-    //     $contagem = $tbl[0];
-    // }
-
     // VERIFICA SE NATAN EXISTE
     if ($contagem == 1) {
-        $sql = "SELECT usu_login FROM tb_usuario WHERE usu_login = '$login' AND usu_senha = '$senha'";
+        $sql = "SELECT usu_id, usu_login FROM tb_usuarios
+        WHERE usu_login = '$login'AND usu_senha = '$senha'";
         $retorno = mysqli_query($link, $sql);
-        // RETORNONADO O NOME DO NATAN + ID DELE    
+        //RETORNANDO O NOME DO NATAN + ID DELE
         while ($tbl = mysqli_fetch_array($retorno)) {
             $_SESSION['idusuario'] = $tbl[0];
             $_SESSION['nomeusuario'] = $tbl[1];
@@ -42,20 +40,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.cdnfonts.com/css/curely" rel="stylesheet">
+
     <title>LOGIN USUARIO</title>
 </head>
 
 <body>
-
     <div class="container-global">
+
+
         <form class="formulario" action="login.php" method="post">
-            <img src="img/logo.jfif" width="100px" height="100px">
-            <br>
+            <img src="img/logo.jfif" width="50" height="50">
             <label>LOGIN</label>
-            <input type="text" name="txtlogin" required>
+            <input type="text" name="txtlogin" placeholder="Digite seu login" required>
             <br>
             <label>SENHA</label>
-            <input type="password" name="txtsenha" required>
+            <input type="password" name="txtsenha" placeholder="Digite sua senha" required>
             <br>
             <br>
             <input type="submit" value="ACESSAR">
