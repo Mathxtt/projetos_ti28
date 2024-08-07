@@ -18,10 +18,11 @@ $status = '1';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.cdnfonts.com/css/curely" rel="stylesheet">
     <title>LISTA DE USUARIOS</title>
 </head>
 <body>
-<a href="backoffice.php"><img src="icons/Navigation-left-01-256.png" width="25" height="25"></a>
+<a href="backoffice.php" class='btnsair'><img src="icons/Navigation-left-01-256.png" width="25" height="25"></a>
 
     <div class="container-listausuarios">
         <!-- FAZER DEPOIS DO ROLÊ -->
@@ -46,9 +47,7 @@ $status = '1';
                     <td><?=$tbl[0]?></td> <!-- COLETA O NOME DO USUARIO-->
                     <td><?=$tbl[1]?></td> <!-- COLETA O EMAIL DO USUARIO-->
                     <td><?=$tbl[2]?></td> <!-- COLETA O STATUS DO USUARIO-->
-                    <td><a href="usuario-altera.php?id=<?=$tbl[3]?>">
-                            <input type="button" value="ALTERAR">
-                        </a>
+                    <td><a href="usuario-altera.php?id=<?=$tbl[3]?>"><input type="button" value="ALTERAR"></a>
                     </td>
                  </tr>
                  <?php

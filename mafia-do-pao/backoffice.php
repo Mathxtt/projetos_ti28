@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 $nomeusuario = $_SESSION['nomeusuario'];
@@ -20,7 +21,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
             <?php
                 if ($nomeusuario != null) {
                 ?>
-                <li class="perfil"><label>BEM VINDO <?= strtoupper($nomeusuario)?></label></li>
+              <label>BEM VINDO <?= strtoupper($nomeusuario)?></label>
             <?php
                 }
                 else {
