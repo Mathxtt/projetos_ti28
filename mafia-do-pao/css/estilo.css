@@ -1,12 +1,13 @@
 body{
-    background-color: #1c3156;
+    background-image: url(../img/fundo2.jpg);
 }
 
 /* CONTAINER GLOBAL */
 .container-global{
     display: flex;
     justify-content: center;
-    background-color: #1c3156;
+   
+
 }
 
 .formulario{
@@ -15,9 +16,9 @@ body{
     align-content: center;
     flex-flow: column;
     padding: 30px 3% 30px 30px;
-    width: 300px;
-    height: 300px;
-    background-color: #383838;
+    width: 400px;
+    height: 400px;
+    background-color: #3670a8;
     border-radius: 20px;
     color: aliceblue;
     font-size: 22px;
@@ -37,6 +38,13 @@ body{
     border-radius: 20px;
     border: aliceblue 1px solid;
 
+}
+.bullets{
+    display: flex;
+    flex-flow: row;
+    justify-items: center;
+    width: auto;
+    height: 100px;
 }
 
 /* CSS DO HOME */
@@ -74,7 +82,7 @@ body{
 }
 
 .menu a{
-    background-color: #0092ba;
+    background-color: #3670a8;
     width: 300px;
     height: 300px;
     margin: 30px 30px 30px 30px;
@@ -119,7 +127,7 @@ body{
 
 
 /* AJUSTANDO TABELAS */
-.container-listausuarios {
+.container-listausuarios, .container-listaclientes {
     margin-top: 60px;
     display: flex;
     flex-flow: column;
@@ -129,18 +137,23 @@ body{
 }
 
 .lista{
-    background-color: #0092ba;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    
+    background-color: #3670a8;
     padding: 20px;
     border-radius: 10px;
     border-collapse: collapse;
-    width: 100%;
+    width: auto;
     height: auto;
-    
+        
 }
 td, tr, th{
     color: #ffffff;
     border: #fff 2px solid;
     font-size: 25px;
+    
 }
 
 .btnsair{
@@ -151,3 +164,15 @@ td, tr, th{
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
   }
+
+/* ÇISTA CLIENTE RADIOS */
+.container-listaclientes form{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    background-color: white;
+    width: auto;
+    border-radius: 20px;
+    padding: 10px;
+}

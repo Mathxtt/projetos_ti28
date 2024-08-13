@@ -1,5 +1,6 @@
 <?php
 include('conectadb.php');
+include('topo.php');
 
 // COLETA O VALOR id LÁ DA URL
 $id = $_GET['id'];
