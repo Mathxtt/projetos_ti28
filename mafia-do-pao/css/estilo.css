@@ -127,13 +127,12 @@ body{
 
 
 /* AJUSTANDO TABELAS */
-.container-listausuarios, .container-listaclientes {
+.container-listausuarios, .container-listaclientes, .container-listaproduto {
     margin-top: 60px;
     display: flex;
     flex-flow: column;
     align-content: center;
     align-items: center;
-
 }
 
 .lista{
