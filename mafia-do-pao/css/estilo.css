@@ -6,7 +6,7 @@ body{
 .container-global{
     display: flex;
     justify-content: center;
-   
+    background-color: #1c3156;
 
 }
 
@@ -16,9 +16,9 @@ body{
     align-content: center;
     flex-flow: column;
     padding: 30px 3% 30px 30px;
-    width: 400px;
-    height: 400px;
-    background-color: #3670a8;
+    width: 300px;
+    height: 300px;
+    background-color: #333333;
     border-radius: 20px;
     color: aliceblue;
     font-size: 22px;
@@ -39,6 +39,7 @@ body{
     border: aliceblue 1px solid;
 
 }
+
 .bullets{
     display: flex;
     flex-flow: row;
@@ -46,6 +47,7 @@ body{
     width: auto;
     height: 100px;
 }
+
 
 /* CSS DO HOME */
 .topo{
@@ -60,7 +62,7 @@ body{
 
 .topo label{
     margin-top: 8px;
-    font-size: 30px;
+    font-size: 22px;
     color: #ffffff;
 }
 
@@ -82,7 +84,7 @@ body{
 }
 
 .menu a{
-    background-color: #3670a8;
+    background-color: #0092ba;
     width: 300px;
     height: 300px;
     margin: 30px 30px 30px 30px;
@@ -93,7 +95,7 @@ body{
     justify-content: center;
     align-items: center;
     color: black;
-    transition: transform .2s;
+    transition: transform .7s;
 }
 
 .menu a:hover {
@@ -127,8 +129,7 @@ body{
 
 
 /* AJUSTANDO TABELAS */
-.container-listausuarios, .container-listaclientes, .container-listaproduto {
-    margin-top: 60px;
+.container-listausuarios, .container-listacliente,  .container-listaproduto {
     display: flex;
     flex-flow: column;
     align-content: center;
@@ -137,22 +138,22 @@ body{
 
 .lista{
     display: flex;
-    justify-content: center;
     flex-flow: row;
-    
-    background-color: #3670a8;
+    justify-content: center;
+    background-color: #0092ba;
     padding: 20px;
     border-radius: 10px;
     border-collapse: collapse;
-    width: auto;
+    width: auto; /*SUGESTÃO MATHEUS*/
     height: auto;
-        
+    
 }
 td, tr, th{
     color: #ffffff;
     border: #fff 2px solid;
     font-size: 25px;
-    
+    padding: 15px;
+    text-align: center;
 }
 
 .btnsair{
@@ -164,8 +165,11 @@ td, tr, th{
     transform: scale(1.1); 
   }
 
-/* ÇISTA CLIENTE RADIOS */
-.container-listaclientes form{
+  /* ADICIONAR APENAS ESSES ROLÊS AQUI EM BAIXO SE SEU CSS FOR PESSOAL */
+  /* CENTRALIZANDO RADIO BUTTONS NAS LISTAS */
+
+  /* LISTA CLIENTE RADIOS */
+.container-listacliente, .container-listausuarios,  form{
     margin-top: 5px;
     display: flex;
     justify-content: center;
@@ -174,4 +178,10 @@ td, tr, th{
     width: auto;
     border-radius: 20px;
     padding: 10px;
+    
+}
+
+.container-listaproduto img{
+    border-radius: 10px;
+
 }
