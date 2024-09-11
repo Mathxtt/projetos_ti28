@@ -1,15 +1,13 @@
 <?php
 session_start();
 $nomeusuario = $_SESSION['nomeusuario'];
-
-// include ("header.php");
 ?>
 
-<div class="topo">
+        <div class="topo">
             <?php
                 if ($nomeusuario != null) {
                 ?>
-              <label>BEM VINDO <?= strtoupper($nomeusuario)?></label>
+              <label>LOGIN: <?= strtoupper($nomeusuario)?></label>
             <?php
                 }
                 else {

@@ -1,45 +1,42 @@
 body{
     background-image: url(../img/fundo2.jpg);
 }
-
+ 
 /* CONTAINER GLOBAL */
 .container-global{
     display: flex;
     justify-content: center;
-    background-color: #1c3156;
-
 }
-
+ 
 .formulario{
     display: flex;
     justify-content: center;
     align-content: center;
     flex-flow: column;
     padding: 30px 3% 30px 30px;
-    width: 300px;
-    height: 300px;
-    background-color: #333333;
+    width: 400px;
+    height: 400px;
+    background-color: #3670a8;
     border-radius: 20px;
     color: aliceblue;
     font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+ 
 .formulario img{
     display: flex;
     align-self: center;
     margin-bottom: 20px;
 }
-
+ 
 .formulario input{
     display: flex;
     justify-content: center;
     height: 22px;
     border-radius: 20px;
     border: aliceblue 1px solid;
-
+ 
 }
-
 .bullets{
     display: flex;
     flex-flow: row;
@@ -47,8 +44,7 @@ body{
     width: auto;
     height: 100px;
 }
-
-
+ 
 /* CSS DO HOME */
 .topo{
     display: flex;
@@ -59,19 +55,19 @@ body{
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
 }
-
+ 
 .topo label{
     margin-top: 8px;
-    font-size: 22px;
+    font-size: 30px;
     color: #ffffff;
 }
-
+ 
 /* SAIR */
 .topo a{
     width: 40px;
     height: 40px;
 }
-
+ 
 /* ESTILIZAÇÃO DOS BOTÕES */
 .menu{
     display: flex;
@@ -82,9 +78,9 @@ body{
     font-size: 30px;
     text-decoration: none;
 }
-
+ 
 .menu a{
-    background-color: #0092ba;
+    background-color: #3670a8;
     width: 300px;
     height: 300px;
     margin: 30px 30px 30px 30px;
@@ -95,23 +91,23 @@ body{
     justify-content: center;
     align-items: center;
     color: black;
-    transition: transform .7s;
+    transition: transform .2s;
 }
-
+ 
 .menu a:hover {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
-
-
-
+ 
+ 
+ 
 .menu img{
     margin-bottom: 30px;
     border-radius: 20px;
 }
-
-  
+ 
+ 
   .menu .tooltiptext {
     margin-top: 260px ;
     width: 200px;
@@ -121,67 +117,53 @@ body{
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-  
+ 
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
   }
-
-
+ 
+ 
 /* AJUSTANDO TABELAS */
-.container-listausuarios, .container-listacliente,  .container-listaproduto {
+.container-listausuarios, .container-listaclientes, .container-listaproduto{
     display: flex;
     flex-flow: column;
     align-content: center;
     align-items: center;
+   
 }
-
+ 
 .lista{
     display: flex;
-    flex-flow: row;
     justify-content: center;
-    background-color: #0092ba;
+    flex-flow: row;
+    background-color: #3670a8;
     padding: 20px;
     border-radius: 10px;
     border-collapse: collapse;
-    width: auto; /*SUGESTÃO MATHEUS*/
+    width: auto;
     height: auto;
-    
 }
 td, tr, th{
     color: #ffffff;
     border: #fff 2px solid;
     font-size: 25px;
-    padding: 15px;
-    text-align: center;
 }
-
+ 
 .btnsair{
     transition: transform .2s;
 }
 .btnsair a:hover {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
-
-  /* ADICIONAR APENAS ESSES ROLÊS AQUI EM BAIXO SE SEU CSS FOR PESSOAL */
-  /* CENTRALIZANDO RADIO BUTTONS NAS LISTAS */
-
-  /* LISTA CLIENTE RADIOS */
-.container-listacliente, .container-listausuarios,  form{
+  .container-listaclientes form{
     margin-top: 5px;
-    display: flex;
     justify-content: center;
     flex-flow: row;
     background-color: white;
     width: auto;
     border-radius: 20px;
     padding: 10px;
-    
-}
-
-.container-listaproduto img{
-    border-radius: 10px;
-
-}
+  }
