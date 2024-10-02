@@ -30,7 +30,7 @@ $retorno = mysqli_query($link, $sql);
 
             <th>ID</th>
             <th>NOME</th>
-            <th>quantidade</th>
+            <th>quantidade</th>  
             <th>VALOR</th>
             <th>IMAGEM</th>
            
@@ -46,7 +46,7 @@ $retorno = mysqli_query($link, $sql);
                 <td><?=$tbl[1]?></td>
                 <td><?=$tbl[4]?></td>
                 <td><?=$tbl[3]?></td>
-                <td><?=$tbl[2]?></td>
+                <td><img src='data:image/jpeg;base64,<?=$tbl[2]?>' width="120" height="120"></td>
                 
                
             </tr>

@@ -32,12 +32,12 @@ $nomeusuario = $_SESSION['nomeusuario'];
   
         <!-- BOTÕES DE MENU -->
          <div class="menu">
-            <a href="usuario-cadastro.php"><span class="tooltiptext">Cadastro de Usuario</span>
+            <a href="usuario-cadastro.php"><span class="tooltiptext">Cadastrar Usuario</span>
                                             <img src="./icons/user-add.png"></a>
             <a href="usuario-lista.php"><span class="tooltiptext">Listar Usuarios</span>
                                             <img src="icons/user-find.png"></a>
-            <a href="produto-cadastro.php"><span class="tooltiptext">Cadastro Produto</span>
-                                            <img src="icons/box.png"></a></a>
+            <a href="produto-cadastro.php"><span class="tooltiptext">Cadastrar Produto</span>
+                                            <img src="icons/box.png"></a>
             <a href="produto-lista.php"><span class="tooltiptext">Listar Produto</span>
                                             <img src="icons/gantt.png"></a>
             <a href="cliente-cadastro.php"><span class="tooltiptext">Cadastrar Cliente</span>
@@ -47,8 +47,11 @@ $nomeusuario = $_SESSION['nomeusuario'];
             <a href="vendas.php"><span class="tooltiptext">Vendas</span>
                                             <img src="icons/shopping-cart-02.png"></a>
             <a href="venda-lista.php"><span class="tooltiptext">Listar Vendas</span>
-                                            <img src="icons/money.png"></a>
-        
+                                            <img src="icons/bill.png"></a>
+            <a href="cupom-cadastro.php"><span class="tooltiptext">Cadastrar Cupom</span>
+                                            <img src="icons/sale.png"></a>
+            <a href="cupom-lista.php"><span class="tooltiptext">Listar Cupom</span>
+                                            <img src="icons/sales-order.png"></a>
          </div>
     </div>
     

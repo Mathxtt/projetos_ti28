@@ -96,7 +96,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             <label>PREÇO</label>
             <input type="decimal" name="txtpreco" placeholder="DIGITE PREÇO" value="<?= $preco?>" required>
             <br>
-            <label>IMAGEM</label>
+            <label>IBAGEM</label>
             <img src="data:image/jpeg;base64,<?= $imagem_atual?>" width="120" height="120">
             <input type="file" name='imagem' id='imagem'>
 
